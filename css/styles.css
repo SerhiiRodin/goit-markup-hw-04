@@ -23,7 +23,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 
 .link {
@@ -125,7 +125,8 @@ p {
 }
 
 .adress-item {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -136,9 +137,19 @@ p {
   color: var(--main-color-text);
 }
 
+.icon-contact {
+  margin-right: 10px;
+  fill: var(--main-color-text);
+}
+
 .adress-item:hover,
 .adress-item:focus {
   color: var(--color-blue);
+}
+
+.adress-item:hover > .icon-contact,
+.adress-item:focus > .icon-contact {
+  fill: var(--color-blue);
 }
 
 /* Heroes */
@@ -147,6 +158,15 @@ p {
   padding-bottom: 200px;
   text-align: center;
 
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/heroes-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: var(--color-background-heroes);
 }
 
@@ -199,6 +219,12 @@ p {
 
 .feature-item {
   width: calc((100% - 3 * 30px) / 4);
+}
+
+.feature-icon {
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .feature-titel {
@@ -298,11 +324,88 @@ p {
 
 .team-text {
   display: block;
+  margin-bottom: 10px;
 
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--color-blue);
+}
+
+.team-icin {
+  fill: #afb1b8;
+}
+
+.team-soc-link:hover > .team-icin,
+.team-soc-link:focus > .team-icin {
+  fill: #ffffff;
+}
+
+/* Clients */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 91px;
+}
+
+.titel-clients {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color-titel);
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--color-blue);
+}
+
+.clients-link:hover > .clients-icon,
+.clients-link:focus > .clients-icon {
+  fill: var(--color-blue);
 }
 
 /* Footer */
@@ -311,6 +414,10 @@ p {
   padding-bottom: 60px;
 
   background: var(--color-background-heroes);
+}
+
+.wraper-footer-content {
+  display: flex;
 }
 
 .logo.footer {
@@ -345,6 +452,46 @@ p {
 
 .adress-link {
   color: var(--color-backgraund-link);
+}
+
+.wraper-footer-soc-list {
+  margin-left: 70px;
+}
+
+.footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  mp: 78px;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}
+
+.footer-list {
+  display: flex;
+  gap: 10px;
+}
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: block;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  fill: var(--color-white);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--color-blue);
 }
 
 /*------------------------------------------- Project */
