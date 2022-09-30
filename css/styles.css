@@ -390,7 +390,7 @@ p {
   justify-content: center;
   align-items: center;
 
-  width: calc((100% - 5 * 30px)/6);
+  width: calc((100% - 5 * 30px) / 6);
   height: 92px;
 }
 
@@ -466,7 +466,6 @@ p {
 
 .wraper-footer-soc-list {
   margin-left: 70px;
-  
 }
 
 .footer-text {
@@ -554,7 +553,7 @@ p {
 }
 
 .item-project {
-  width: calc((100% - 2 * 30px) / 3); 
+  width: calc((100% - 2 * 30px) / 3);
 }
 
 .project-link {
