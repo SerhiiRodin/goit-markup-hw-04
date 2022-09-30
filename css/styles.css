@@ -23,7 +23,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .link {
@@ -385,9 +385,16 @@ p {
   gap: 30px;
 }
 
-.clients-link {
-  width: 170px;
+.clients-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: calc((100% - 5 * 30px)/6);
   height: 92px;
+}
+
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -420,6 +427,7 @@ p {
 
 .wraper-footer-content {
   display: flex;
+  align-items: baseline;
 }
 
 .logo.footer {
@@ -458,6 +466,7 @@ p {
 
 .wraper-footer-soc-list {
   margin-left: 70px;
+  
 }
 
 .footer-text {
@@ -466,7 +475,6 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  mp: 78px;
   margin-bottom: 20px;
 
   color: #ffffff;
